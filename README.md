@@ -1,3 +1,27 @@
+installation commands:
+update .env file
+DB_DATABASE="your database name"
+DB_USERNAME="your DB user name"
+DB_PASSWORD="your database pasword"
+
+MAIL_MAILER=smtp
+MAIL_FROM_ADDRESS="noreply@example.com"
+MAIL_FROM_NAME="${APP_NAME}"
+MAIL_HOST=mail.example.com
+MAIL_PORT=465
+MAIL_USERNAME=noreply@example.com
+MAIL_PASSWORD="your password"
+
+composer install
+
+php artisan migrate --seed
+npm install
+npm run build
+php artisan optimize:clear
+
+DB_CONNECTION=mysql
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
